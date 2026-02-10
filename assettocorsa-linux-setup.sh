@@ -117,7 +117,7 @@ elif [[ ${supported_gentoo[*]} =~ "$ID" ]] || [[ ${supported_gentoo[*]} =~ "$ID_
   required_packages=("net-misc/wget" "app-arch/tar" "app-arch/unzip" "dev-libs/glib2" "app-emulation/protontricks")
   pm_install="emerge"
 elif [[ ${supported_void[*]} =~ "$ID" ]] || [[ ${supported_void[*]} =~ "$ID_LIKE" ]]; then
-  required_packages=("wget", "tar", "unzip", "glib", "protontricks")
+  required_packages=("wget" "tar" "unzip" "glib" "protontricks")
   pm_install="xbps-install -S"
 else
   echo "\
